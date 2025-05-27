@@ -1,0 +1,75 @@
+@import '../../../styles/abstracts/variables';
+
+.modal-project {
+  font-size: 1.4rem;
+  color: var(--text);
+
+  &__header {
+    margin-bottom: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .modal-project__title {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .modal-project__tag {
+      background-color: #f1c40f;
+      padding: 0.4rem 0.8rem;
+      font-size: 1.2rem;
+      border-radius: 0.4rem;
+      white-space: nowrap;
+    }
+  }
+
+  &__meta {
+    margin-bottom: 1rem;
+
+    p {
+      margin: 0.2rem 0;
+    }
+  }
+
+  &__description {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  &__carousel {
+    margin-bottom: 2rem;
+    
+    width: 80%;
+
+    .embla {
+      border-radius: 1.2rem;
+      overflow: hidden;
+      box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+    }
+
+    .embla__slide__img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      border-radius: 0.8rem;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: $color-primary;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 0.6rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($color-primary, 10%);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-bottom: 10.5rem;
+
+  .title {
+    margin-bottom: 3rem;
+  }
+
+  .About {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__image {
+      flex: 6;
+    }
+
+    &__content {
+      flex: 6;
+      &-text {
+        font-size: 1.4rem;
+        text-align: justify;
+        line-height: 2.5rem;
+        margin-bottom: 2rem;
+      }
+
+      &-buttons {
+        display: flex;
+        gap: 1rem;
+        margin-top: 3rem;
+      }
+    }
+  }
+}

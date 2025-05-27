@@ -1,0 +1,16 @@
+@import '../abstracts/variables';
+
+body {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: $color-gray-dark;
+}
+
+.sec_title {
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  border-bottom: $color-primary 0.5rem solid;
+}

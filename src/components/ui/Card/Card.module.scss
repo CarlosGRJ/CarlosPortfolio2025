@@ -1,0 +1,39 @@
+@import '../../../styles/abstracts/variables';
+
+.card {
+  background-color: var(--bg);
+  color: var(--text);
+  // border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+  border: 1px $color-gray-dark solid;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: left;
+
+  &:hover {
+    box-shadow: 0 1.2rem 2rem rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+  }
+}
+
+.icon svg {
+  width: 10rem;
+  height: 10rem;
+  color: $color-primary;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--text-secondary, #666);
+}

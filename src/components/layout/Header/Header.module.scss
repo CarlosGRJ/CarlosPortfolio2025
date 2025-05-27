@@ -1,0 +1,72 @@
+@import '../../../styles/abstracts/variables'; // import variables
+
+.header {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 100;
+
+  nav {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+
+      .logo svg {
+        width: 9rem;
+        height: 8rem;
+        margin-left: -2.8rem;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+        color: inherit;
+
+        li {
+          display: flex;
+          align-items: center;
+
+          a {
+            position: relative;
+            list-style: none;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: var(--text);
+
+            &::after {
+              content: '';
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 0;
+              height: 0.2rem;
+              background-color: $color-underline;
+              transition: width 0.3s ease;
+            }
+
+            &:hover::after {
+              width: 45%;
+            }
+
+            &:hover {
+              color: $color-underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// sticky header
+.sticky {
+  position: fixed;
+  // top: 0;
+  // right: 0;
+  width: 82.5%;
+  background-color: var(--bg);
+  // transition: all 0.2s ease;
+}
