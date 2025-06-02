@@ -74,8 +74,8 @@ export const projects: ProjectItem[] = [
     description: (
       <>
         <p>
-          I worked on Baco caminos U.S. e-commerce platform, contributing to
-          its micro-frontend React architecture. My responsibilities included:
+          I worked on Baco caminos U.S. e-commerce platform, contributing to its
+          micro-frontend React architecture. My responsibilities included:
         </p>
         <ul>
           <li>🔧 Tool, vehicle,s and equipment rentals (step-by-step flow)</li>
@@ -127,17 +127,20 @@ export const projects: ProjectItem[] = [
     description: (
       <>
         <p>
-          I worked on The Home Depot’s U.S. e-commerce platform, contribucacting to
-          its micro-frontend React architecture. My responsibilities included:
+          I worked on The Home Depot’s U.S. e-commerce platform, contribucacting
+          to its micro-frontend React architecture. My responsibilities
+          included:
         </p>
         <ul>
-          <li>🔧 Tool, vcacehicle, and equipment rentals (step-by-step flow)</li>
+          <li>
+            🔧 Tool, vcacehicle, and equipment rentals (step-by-step flow)
+          </li>
           <li>🚚 Schedulacced equipment deliveries</li>
           <li>🔁 Migratiacon of REST to GraphQL with Apollo Client</li>
         </ul>
         <p>
-          This required clacose collaboration with international teams and strict
-          adherence to acacaccessibility and performance standards.
+          This required clacose collaboration with international teams and
+          strict adherence to acacaccessibility and performance standards.
         </p>
       </>
     ),
@@ -162,6 +165,200 @@ export const projects: ProjectItem[] = [
     ],
     role: 'Frontend Developer',
     techStack: 'React, GraphQL, Apollo, SCSS',
+    url: 'https://www.homedepot.com/',
+  },
+  {
+    id: 'sabadell-simulator',
+    title: 'Sabadell - Simulator',
+    isInternal: true,
+    summary:
+      'lorem ipsum aosidjoasijdoasijdlaskjd lkaihjsdoiasjdoiasnijuasdf 0iojasfoij',
+    description: (
+      <>
+        <p>
+          I worked on The Home Depot’s U.S. e-commerce platform, contribucacting
+          to its micro-frontend React architecture. My responsibilities
+          included:
+        </p>
+        <ul>
+          <li>
+            🔧 Tool, vcacehicle, and equipment rentals (step-by-step flow)
+          </li>
+          <li>🚚 Schedulacced equipment deliveries</li>
+          <li>🔁 Migratiacon of REST to GraphQL with Apollo Client</li>
+        </ul>
+        <p>
+          This required clacose collaboration with international teams and
+          strict adherence to acacaccessibility and performance standards.
+        </p>
+      </>
+    ),
+    coverImg: '/images/projects/Sabadell/Simulator/step1.webp',
+    images: [
+      {
+        src: '/images/projects/Sabadell/Simulator/step1.webp',
+        alt: 'Sabadell step1',
+      },
+      {
+        src: '/images/projects/Sabadell/Simulator/step2.webp',
+        alt: 'Sabadell step2',
+      },
+      {
+        src: '/images/projects/Sabadell/Simulator/step3.webp',
+        alt: 'Sabadell step3',
+      },
+      {
+        src: '/images/projects/Sabadell/Simulator/step4.webp',
+        alt: 'Sabadell step4',
+      },
+      {
+        src: '/images/projects/Sabadell/Simulator/step5.webp',
+        alt: 'Sabadell step5',
+      },
+    ],
+    role: 'Frontend Developer',
+    techStack: 'React, GraphQL, Apollo, SCSS, Tailwind',
+    url: 'https://www.homedepot.com/',
+  },
+  {
+    id: 'telcel-b2b',
+    title: 'Telcel - B2B Dashboard',
+    isInternal: true,
+    summary:
+      'lorem ipsum aosidjoasijdoasijdlaskjd lkaihjsdoiasjdoiasnijuasdf 0iojasfoij',
+    description: (
+      <>
+        <p>
+          I worked on The Home Depot’s U.S. e-commerce platform, contribucacting
+          to its micro-frontend React architecture. My responsibilities
+          included:
+        </p>
+        <ul>
+          <li>
+            🔧 Tool, vcacehicle, and equipment rentals (step-by-step flow)
+          </li>
+          <li>🚚 Schedulacced equipment deliveries</li>
+          <li>🔁 Migratiacon of REST to GraphQL with Apollo Client</li>
+        </ul>
+        <p>
+          This required clacose collaboration with international teams and
+          strict adherence to acacaccessibility and performance standards.
+        </p>
+      </>
+    ),
+    coverImg: '/images/projects/Telcel/B2B/1-Login.webp',
+    images: [
+      {
+        src: '/images/projects/Telcel/B2B/1-Login.webp',
+        alt: 'Login B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/2-Home.webp',
+        alt: 'Home B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/3-Menu.webp',
+        alt: 'Menu B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/4-Identificacion.webp',
+        alt: 'Identificacion B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/5-Identificacion_2.webp',
+        alt: 'Identificacion_2 B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/6-Retoma_tramite.webp',
+        alt: 'Retoma_tramite B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/7-Acti_step1.webp',
+        alt: 'Acti_step1 B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/8-Acti_step1_2.webp',
+        alt: 'Acti_step1_2 B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/9-Acti_step2.webp',
+        alt: 'Acti_step2 B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/10-Acti_step2_buro_de_credito.webp',
+        alt: 'Acti_step2_buro_de_credito B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/11-Acti_step2_Carta_autorizacion_buro_credito.webp',
+        alt: 'Acti_step2_Carta_autorizacion_buro_credito B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/12-Consulta_CCS1.webp',
+        alt: 'Consulta_CCS1 B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/13-Resumen_CCS1.webp',
+        alt: 'Resumen_CCS1 B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/14-Acti_step3_seleccion_oferta.webp',
+        alt: 'Acti_step3_seleccion_oferta B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/15-Servicios_adicionales.webp',
+        alt: 'Servicios_adicionales B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/16-Acti_step3_equipo.webp',
+        alt: 'Acti_step3_equipo B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/17-Acti_step3_numero.webp',
+        alt: 'Acti_step3_numero B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/18-Acti_step4.webp',
+        alt: 'Acti_step4 B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/19-Acti_sttep5.webp',
+        alt: 'Acti_sttep5 B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/20-Acti_step5-2.webp',
+        alt: 'Acti_step5-2 B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/21-Acti_step5-3.webp',
+        alt: 'Acti_step5-3 B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/22-Aci_step5_Resumn_CCS_FINAL.webp',
+        alt: 'Aci_step5_Resumn_CCS_FINAL B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/23-Fin_tramite.webp',
+        alt: 'Fin_tramite B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/24-Bandeja_tramites.webp',
+        alt: 'Bandeja_tramites B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/25-Verificaciones.webp',
+        alt: 'Verificaciones B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/26-Verificaciones_seguimiento.webp',
+        alt: 'Verificaciones_seguimiento B2B',
+      },
+      {
+        src: '/images/projects/Telcel/B2B/27-Consulta-Tramites.webp',
+        alt: 'Consulta-Tramites B2B',
+      },
+    ],
+    role: 'Frontend Developer',
+    techStack: 'React, GraphQL, Apollo, SCSS, Tailwind',
     url: 'https://www.homedepot.com/',
   },
 ];

@@ -1,4 +1,5 @@
 @import '../../../styles/abstracts/variables';
+@import '../../../styles/abstracts/mixins';
 
 .container {
   display: flex;
@@ -7,6 +8,10 @@
   flex-direction: column;
   font-size: 1.4rem;
   margin-top: 8rem;
+
+  @include respond(tab-port) {
+    padding: 4rem;
+  }
 
   h2 {
     margin-bottom: 3rem;
@@ -17,6 +22,10 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     .exp {
       // display: flex;

@@ -1,0 +1,101 @@
+@import '../../../styles/abstracts/variables';
+@import '../../../styles/abstracts/mixins';
+
+.mobileWrapper {
+  display: none;
+
+  @include respond(tab-port) {
+    display: block;
+  }
+
+  .burger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: -1rem;
+
+    span {
+      width: 25px;
+      height: 3px;
+      background-color: var(--text);
+      transition: all 0.3s ease;
+    }
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 80%;
+    background-color: var(--bg);
+    padding: 2rem;
+    z-index: 999;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    .closeBtn {
+      position: absolute;
+      right: 5rem;
+      top: 4rem;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: var(--text);
+      cursor: pointer;
+      margin-bottom: 1rem;
+
+      &:hover {
+        color: $color-underline;
+      }
+    }
+
+    ul {
+      padding: 1rem;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      li {
+        height: 4rem;
+        padding: 1rem;
+
+        a {
+          position: relative;
+          color: var(--text);
+          text-decoration: none;
+          font-size: 2rem;
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0.2rem;
+            background-color: $color-underline;
+            transition: width 0.3s ease;
+          }
+
+          &:hover::after {
+            width: 45%;
+          }
+
+          &:hover {
+            color: $color-underline;
+          }
+        }
+      }
+    }
+  }
+
+  .open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -9,6 +9,7 @@ import { useTheme } from '@/context/ThemeProvider';
 import { ThemeEnum } from '@/types/theme';
 
 import classes from './Header.module.scss';
+import MobileMenu from '../MobileMenu/MobileMenu';
 
 function Header() {
   const { t, toggleLocale, locale } = useTranslation();
@@ -27,12 +28,13 @@ function Header() {
   return (
     <header className={`${classes.header}`}>
       <nav aria-label='Main Navigation'>
-        <div className={`${classes.container} ${isSticky ? classes.sticky : ''}`}>
+        <div
+          className={`${classes.container} ${isSticky ? classes.sticky : ''}`}>
           <a href='#home' className={classes.logo} aria-label='Homepage'>
             {theme === ThemeEnum.LIGHT ? <LogoBlack /> : <LogoWhite />}
           </a>
 
-          <ul className={classes['nav-links']}>
+          <ul className={`${classes['nav-links']}`}>
             <li>
               <a href='#home'>{t.Header.Home}</a>
             </li>
@@ -51,16 +53,20 @@ function Header() {
             <li>
               <a href='#contact'>{t.Header.Contact}</a>
             </li>
+            
             <li>
               <ThemeToggle />
             </li>
 
             <li>
-              <button onClick={toggleLocale}>
+              <button onClick={toggleLocale} aria-label='Toggle language'>
                 {locale === 'en' ? 'ES' : 'EN'}
               </button>
             </li>
           </ul>
+
+          {/* Mobile Menu */}
+          <MobileMenu />
         </div>
       </nav>
     </header>

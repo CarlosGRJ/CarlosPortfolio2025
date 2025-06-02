@@ -5,6 +5,7 @@ import React from 'react';
 
 import classes from './AboutSection.module.scss';
 import { useTranslation } from '@/context/TranslationProvider';
+import Image from 'next/image';
 
 function AboutSection() {
   const { t } = useTranslation();
@@ -15,7 +16,12 @@ function AboutSection() {
 
       <div className={classes.About}>
         <div className={classes.About__image}>
-          <h3>Image here</h3>
+          <Image
+            width={350}
+            height={350}
+            src='/images/AboutMe.webp'
+            alt='AboutMe Coffee Coding'
+          />
         </div>
         <div className={classes.About__content}>
           <p className={classes['About__content-text']}>
